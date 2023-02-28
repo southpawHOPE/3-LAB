@@ -266,4 +266,46 @@ int main()
 
 }
 
-14)
+14)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cout << "N:";
+    cin >> n;
+    float doublefactorial = 1;
+    while (n >= 2) {
+        doublefactorial *= n;
+        n -= 2;
+    }
+
+    cout<< "N!! = " << doublefactorial;
+       
+
+}
+
+15)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cout << "N:";
+    cin >> n;
+    int k = 1;
+    while (k * k <= n) ++k;
+    cout << "Наибольшее число = " << k;
+       
+
+}
+
+16)
