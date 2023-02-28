@@ -49,5 +49,52 @@ int main()
 }
 
 
-4)
+4)#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    float сумма = 0;
+    cin >> n;
+    int i;
+    for (i = 1; i < n; i++)
+        сумма += 1.0 / i;
+    cout << "Сумма чисел = " << сумма << endl;
+
+}
+
+5)#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cout << "n=";
+    cin >> n;
+
+    float значение = 0;
+    for (int i = 1; i <= n; i++)
+        значение += pow(-1, i + 1) * (1.0 + (float)i / 10);
+    cout << "Result=" << значение;
+    return 0;
+
+}
+
+6)#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    float n;
+    double a, sum = 0 ;
+    cin >> a >> n;
+    for (int i = 1; i <= n; i++)
+        sum += pow(a, i);
+    cout << sum;
+
+}
 
