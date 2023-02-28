@@ -206,6 +206,31 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
+    int a, b;
+    cout << "A:";
+    cin >> a;
+    cout << "B:";
+    cin >> b;
+    int tally = 0;
+    while (a >= b) {
+        a -= b;
+        tally++;
+    }
+    cout << tally << endl << a;
+
+}
+
+
+
+12)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
     int n, k;
     cout << "N:";
     cin >> n;
@@ -223,4 +248,22 @@ int main()
 
 }
 
-12)
+13)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int a;
+    cout << "A:";
+    cin >> a;
+    while (a > 0) a -= 3;
+    (a == 0) ? cout << "True" : cout << "False";
+       
+
+}
+
+14)
