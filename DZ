@@ -84,17 +84,143 @@ int main()
 }
 
 6)#include <iostream>
+#include <math.h>
+
 using namespace std;
+
+int main()
+{
+    float a, sum = 0;
+    int n;
+    cin >> a >> n; 
+    for (int i = 0; i <= n; i++)
+        sum += pow(-a, i);
+    cout << sum;
+}
+
+
+7)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n;
+    cout << "Число: ";
+    cin >> n;
+
+
+    float zxc = 1;
+    int i;
+
+    for (i = 1; i <= n; ++i)
+        zxc *= (float)i;
+
+    cout << "N = " << zxc << endl;
+}
+
+
+8)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n;
+    cout << "N:";
+    cin >> n;
+
+
+    float factorial = 1, sum = 0;
+    int i;
+
+
+    for (i = 1; i <= n; ++i) {
+        factorial *= i;
+        sum += (n - i + 1);
+    }
+    cout << sum;
+}
+
+
+9)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    float n;
-    double a, sum = 0 ;
-    cin >> a >> n;
-    for (int i = 1; i <= n; i++)
-        sum += pow(a, i);
-    cout << sum;
+    int N, F1 = 1, F2 = 1, F3;
+    cout << "Enter N:";
+    cin >> N;
+    cout << F1 << " " << F2 << " ";
+    for (int i = 3; i <= N; i++)
+    {
+        F3 = F2 + F1;
+        F1 = F2;
+        F2 = F3;
+        cout << F3 << endl << " " << endl;
+    }
+    
+
 
 }
 
+
+10)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int a, b;
+    cout << "A:";
+    cin >> a;
+    cout << "B:";
+    cin >> b;
+
+    int i, k;
+    for (i = a; i <= b; ++i) {
+        for (k = 1; k <= i; ++k)
+            cout << i << " ";
+    }
+
+}
+
+
+11)#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int n, k;
+    cout << "N:";
+    cin >> n;
+    cout << "K:";
+    cin >> k;
+
+    int oper = 0;
+    while (n >= k) {
+        n -= k;
+        ++oper;
+    }
+    cout << oper << endl;
+
+    cout << n;
+
+}
+
+12)
